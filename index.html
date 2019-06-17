@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <title>ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript">
+  </script>
+  <!-- <link rel="shortcut icon" href="img/favicon.ico" /> -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="logo">
+        <!-- <span class="logo-name">中村太一</span> -->
+        <span class="logo-title">PORTFOLIO</span>
+      </h1>
+    </header>
+    <nav id="gnav">
+      <ul>
+        <li><a href="#latestworks">WORKS</a></li>
+        <li><a href="#skill">SKILL</a></li>
+      </ul>
+    </nav>
+    <main id="contents">
+      <section class="section" id="latestworks">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">WORKS</h2>
+          </div>
+          <div class="two-column-wrapper">
+            <div class="two-column-image">
+              <p>(クリックで拡大)</p>
+              <a href="img/latestworks/agqr.jpg" rel="lightbox[ff14]">
+                <img src="img/latestworks/agqr.jpg" alt="">
+              </a>
+            </div>
+            <div class="two-column-desc">
+              <p class="text">
+                作品タイトル：ラジオ録音サーバー + 自動アップロードソフトウェア
+                <p>ラジオ録音サーバー使用技術:Ruby,Rtmpdump,ffmpeg</p>
+                <p>自動アップロードソフトウェア使用技術:Python,Pydrive</p>
+                <p>制作期間：1ヶ月</p>
+                コメント：
+                <p>左の画像は録音時の出力です。</p>
+                <p>rtmp配信であるラジオの録音をスケジュールに従って録音するソフトウェアとそのファイルを自動でアップロードするソフトウェア...なのですが、
+                  録音は配信元の規約に乗っ取るとして、GoogleDriveに著作物をアップロードするのはどうなんだと思い(著作権有識者の中で議論中だそうです)
+                  テストファイルのアップロードを持って機能の実装を確認しました。</p>
+                <p>作った背景としては単純に思いついた時に便利だなと思い使いたかったのとRuby,Pythonの勉強をしたかったからです。</p>
+                <p>ソースはgithubに上がっています。</p>
+                <p>この環境をdockerで構築するためのDockerfileもあります。</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+          <div class="two-column-wrapper">
+            <div class="two-column-image">
+              <p>(クリックで拡大)</p>
+              <a href="img/latestworks/video.JPG" rel="lightbox[ff14]">
+                <img src="img/latestworks/video.JPG" alt="">
+              </a>
+            </div>
+            <div class="two-column-desc">
+              <p class="text">
+                作品タイトル：ビデオチャット(リモートワーク支援ソフトになる予定)
+                <p>使用技術:HTML,CSS,JavaScript,SkywayAPI,GoogleFirebase
+                  <p>制作期間：作成中(左図はイメージ図です)</p>
+                  コメント：
+                  <p>
+                    部活内や学校のグループ課題作成のリモートワーク時に進捗が出づらい事に気づき作成しようと思ったアプリ
+                  </p>
+                  <p>
+                    まだ進捗的にはSkywayとFirebaseのチュートリアルを組み合わせただけの段階
+                  </p>
+                  <p>
+                    なぜリモートワーク時には進捗が出ないのかと考えた結果
+                    <div class="list">
+                      <ul>
+                        <li>・今何をやっていてどのくらいの進捗なのかがひと目でわからない</li>
+                        <li>・気軽に声をかけにくい(特に雑談とかは)</li>
+                        <li>・タスクにかける時間が間延びしがち</li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </p>
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+          <div class="two-column-wrapper">
+            <div class="two-column-image">
+              <p>1.(クリックで拡大)</p>
+              <a href="img/latestworks/JR.jpg" rel="lightbox[ff14]">
+                <img src="img/latestworks/JR.jpg" alt="">
+              </a>
+              <p>2.(クリックで拡大)</p>
+              <a href="img/latestworks/JR_mars.gif" rel="lightbox[ff14]">
+                <img src="img/latestworks/JR_mars.gif" alt="">
+              </a>
+            </div>
+            <div class="two-column-desc">
+              <p class="text">
+                作品タイトル：mars for windos と マルス券シュミレーターの連携アプリ
+                <p>使用技術:Python,selenium</p>
+                <p>制作期間：1週間</p>
+                コメント：
+                <p>これは本当にネタで作ったのですが既存の
+                  <div class="inner-yoshi">
+                    <a href="http://r113.web.fc2.com" target="_blank">mars for windows</a>
+                  </div>
+                  というアプリケーションと
+                  <div class="inner-yoshi">
+                    <a href="http://r113.web.fc2.com" target="_blank">yoshi223さん</a>
+                  </div>
+                  が作成されたマルス券シュミレーターをうまく連動
+                  させれないかという発想のもと作成したものです。
+                </p>
+                <p>mars for windowsで出力した経路結果(1.)を自動でブラウザ上に入力してくれます。</p>
+                <p>このソースコードもgithubに上がっています</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="skill">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">SKILL</h2>
+            <p class="section-desc">
+              すべて趣味の範囲です。
+            </p>
+          </div>
+          <div class="card-wrapper">
+            <div class="card-wrapper">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">HTML/CSS</h3>
+                <p class="text">
+                  授業とビデオチャットアプリとこのポートフォリオ作成でちょっと触った程度です
+                  <br>BootstrapとCSSの組み合わせが難しいですね
+                  <br>業務で使えるレベルまでの力はございません
+                </p>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">Python</h3>
+                <p class="text">
+                  なにか作ろうと思ったらとりあえずPythonにしがちな結果Pythonが他の言語よりちょっと使えるようになりました
+                  <br>趣味でアプリ作るときはPythonのほうがモチベーションが保ちやすい気がします
+                </p>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">docker</h3>
+                <p class="text">
+                  最近コンテナの便利さに気づき使い始めました
+                  <br>インフラ好きなのでまぁまぁ使えるようになりました
+                  <br>クラウド+コンテナが便利で最近ハマってます
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--タグはここから-->
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center"><a href="http://www.rays-counter.com/"><img
+                    src="http://www.rays-counter.com/d436_f6_001/5cde479aee7ea/" alt="アクセスカウンター" border="0"></a></td>
+            </tr>
+            <tr>
+              <td align="center" style="font-size:xx-small"><img src="http://www.rays-counter.com/images/counter_01.gif"
+                  border="0"><img src="http://www.rays-counter.com/images/counter_02.gif" border="0"><img
+                  src="http://www.rays-counter.com/images/counter_03.gif" border="0"><img
+                  src="http://www.rays-counter.com/images/counter_04.gif" border="0"><img
+                  src="http://www.rays-counter.com/images/counter_05.gif" border="0"></td>
+            </tr>
+          </table>
+          <!--ここまで-->
+        </div>
+  </div>
+  </section>
+  </main>
+  <footer id="footer">
+    <div class="inner">
+      <nav class="footer-link">
+        <ul>
+          <li><a href="#latestworks">WORKS</a></li>
+          <li><a href="#skill">SKILL</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">Copyright&copy;Sho Satoh. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </div>
+
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+
+</html>
